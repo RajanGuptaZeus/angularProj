@@ -1,0 +1,12 @@
+<div class="token-draggable-area">
+    <div [innerHTML]="sanitizedQuestion || 'No text or token has been added yet'"></div>
+    <div class="drag-items">
+      <div *ngFor="let response of responses" class="response-box">
+        <span class="material-symbols-outlined">
+          drag_indicator
+        </span>
+        <p>{{ response }}</p>
+      </div>
+    </div>
+  </div>
+  

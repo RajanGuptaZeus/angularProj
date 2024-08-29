@@ -1,0 +1,90 @@
+<div class="main-container">
+  <div class="props">
+    <div class="top">
+      <p>Properties</p>
+      <span *ngIf="!togglePropShow" class="material-symbols-outlined" (click) = "togglePropShow = true">keyboard_arrow_down</span>
+      <span *ngIf="togglePropShow" (click) = "togglePropShow = false" class="material-symbols-outlined">keyboard_arrow_up</span>
+    </div>
+    <div class="questProp" *ngIf="togglePropShow">
+        <p>*Fields are required</p>
+        <textarea name="" id="" placeholder="Question Description"></textarea>
+        <label for="subject" class="subject-labels">Subject*</label>
+        <div class="inCol">
+            <select name="subject" id="">
+                <option value="math">Math</option>
+                <option value="math">Math</option>
+                <option value="math">Math</option>
+            </select>
+            <select name="" id="">
+                <option value="strand">Strand</option>
+                <option value="strand">Strand</option>
+                <option value="strand">Strand</option>
+            </select>
+        </div>
+        <label for="language">Language*</label>
+        <select name="language" id="">
+            <option value="english">English</option>
+            <option value="english">English</option>
+            <option value="english">English</option>
+        </select>
+        <label for="grades">Grades*</label>
+        <p>Select Grades</p>
+        <label for="difficulty-level">Difficulty-Level*</label>
+        <select name="difficulty-level" id="">
+            <option value="all-level">All Leveks</option>
+            <option value="all-level">All Leveks</option>
+            <option value="all-level">All Leveks</option>
+        </select>
+        <select name="" id="">
+            <option value="revised-blossom's">Revised Blossom's</option>
+            <option value="revised-blossom's">Revised Blossom's</option>
+            <option value="revised-blossom's">Revised Blossom's</option>
+        </select>
+        <label for="std">Standards for Mathematical Practice</label>
+        <p>Select Standards for Mathematical Practice</p>
+        <label for="knowledge">Depth of Knowledge</label>
+        <p>Select Depth of Knowledge</p>
+        <label for="keywords">Keywords</label>
+        <p>Add Keywords</p>
+        <label for="passage-associations">Passage Associations</label>
+        <label for="object-id">Object ID</label>
+        <p>-</p>
+        <p>Object ID will be auto-generated when question is created</p>
+        <label for="competencies">Compentencies</label>
+        <p>Select Competencies</p>
+    </div>
+  </div>
+  <div class="props">
+    <div class="top">
+      <p>Standards and Skills (Optional) </p>
+      <span *ngIf="!toggleSkillShow" (click) = "toggleSkillShow = true" class="material-symbols-outlined">keyboard_arrow_down</span>
+      <span *ngIf="toggleSkillShow" (click) = "toggleSkillShow = false" class="material-symbols-outlined">keyboard_arrow_up</span>
+    </div>
+    <div *ngIf="toggleSkillShow" class="questProp">
+        <div>
+            <p>Select Standards</p>
+            <p>0 selected</p>
+        </div>
+        <p>Select the Standards Set</p>
+        <div class="options">
+            <select name="" id="">
+                <option value="strand">Strand</option>
+                <option value="strand">Strand</option>
+                <option value="strand">Strand</option>
+            </select>
+            <select name="" id="">
+                <option value="strand">Strand</option>
+                <option value="strand">Strand</option>
+                <option value="strand">Strand</option>
+            </select>
+            <select name="" id="">
+                <option value="strand">Strand</option>
+                <option value="strand">Strand</option>
+                <option value="strand">Strand</option>
+            </select>
+        </div>
+        <button disabled>Load Standards</button>
+    </div>
+  </div>
+  <button>Save and Proceed</button>
+</div>

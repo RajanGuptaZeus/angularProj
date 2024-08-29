@@ -1,0 +1,88 @@
+.main-container {
+    background: #EEEEEE;
+    padding: 37px 14rem;
+}
+
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left-content {
+    display: flex;
+    align-items: center;
+}
+.left-content > p{
+    font-size: 24px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.left-content > span {
+    margin-left: 10px;
+    font-size: 12px;
+    color: #666666;
+}
+.right-content {
+    display: flex;
+}
+.right-content > button {
+    padding: 5px 15px;
+    background: #E2F8FE;
+    border: 1px solid #7994B3;
+    cursor: pointer;
+    border-radius: 2px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+.right-content > button > p {
+    margin-left: 3px;
+    font-size: 16px;
+}
+
+.right-content > button:disabled {
+    color: #A4A8AD;
+}
+
+
+.sections {
+    background: #FFFFFF;
+    border-radius: 2px;
+    padding: 12px 24px;
+    margin: 24px 0 32px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sections > .ques{
+    display: flex;
+    align-items: center;
+} 
+
+
+.ques > span {
+    height: 40px;
+    width: 40px;
+    font-size: 22px;
+    background: #3FD28B;
+    padding: 7px 15px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+.ques > .material-symbols-outlined {
+    padding: 10px 10px;
+}
+.sections:nth-child(1) > .ques span {
+    padding: 8px 10px;
+}
+
+.ques > p {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.divider { 
+    height: 2px;
+    width: 55%;
+    background-color: #EEEEEE;
+}

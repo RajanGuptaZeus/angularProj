@@ -1,0 +1,69 @@
+.token-draggable-area {
+    min-height: 163px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #F3FBFF;
+    justify-content: space-around;
+    padding: 5px;
+}
+.token-draggable-area > p {
+    font-size: 16px;
+    margin: 32px 0;
+    color: #666666;
+    max-width: 97%;
+    text-align: left;
+}
+
+.token-draggable-area > p > span {
+    background: red;
+}
+.token-draggable-area > .drag-items {
+    width: 99%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    border: 2px dashed #757575;
+    min-height: 80px
+}
+
+.response-box {
+    display: flex;
+    align-items: center;
+    border: 2px solid #757575;
+    background-color: #ffffff;
+    padding: 0 4px;
+    margin-left: 10px;
+    font-weight: 600;
+    min-width: 8rem;
+    text-align: center;
+    max-width: 80%;
+}
+
+.response-box > span {
+    cursor: move;
+}
+:host ::ng-deep .differentToken {
+    background: #ffffff;
+    border: 2px dashed #000000C4;
+    padding: 4px 10px;
+    font-size: 16px;
+    margin-right: 8px;
+    display: inline-block;
+    text-align: center;
+    min-width: 6rem;
+  }
+
+  /* .response-box {
+    display: flex;
+    align-items: center;
+    cursor: move;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .response-box span {
+    margin-right: 5px;
+  } */

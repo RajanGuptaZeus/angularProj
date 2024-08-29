@@ -1,0 +1,61 @@
+.main-container {
+    padding: 1.7rem 14rem;
+    background: #EEEEEE;
+}
+.props:nth-child(2) {
+    margin-top: 20px;
+}
+.top {
+    background: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+}
+.top > p {
+    font-size: 20px;
+    padding: 16px 24px;
+}
+.top > span {
+    padding: 16px 8px;
+    border-left: 1px solid rgba(0, 0, 0, 0.11);
+    cursor: pointer;
+}
+.hide {
+    display: none;
+}
+.questProp {
+    background-color: #FFFFFF;
+    margin-top: 4px;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+}
+.questProp > p {
+    text-align: right;
+    font-size: 12px;
+    color: #3b3b3b;
+}
+
+.questProp > textarea {
+    border: none;
+    border-bottom: 2px solid black;
+    width: 30rem;
+    padding-bottom: 1rem;
+    font-size: 18px;
+}
+.subject-labels {
+    margin-top: 3rem;
+    font-size: 14px;
+    color: gray;
+    font-weight: 500;
+}
+.inCol {
+    display: flex;
+}
+select {
+    margin-top: 8px;
+    border: none;
+    border-bottom: 2px solid gray;
+    width: 14rem;
+    margin-right: 20px;
+    padding-bottom: .4rem;
+}

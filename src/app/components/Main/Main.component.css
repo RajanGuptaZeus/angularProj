@@ -1,0 +1,186 @@
+.container{
+    background: #EEEEEE;
+    padding: 0 14rem 37px;
+}
+
+.main-container {
+    padding: 51px 24px;
+    background: #FFFFFF;
+    border-radius: 2px;
+}
+
+.input-box {
+    border: none;
+    width: 100%;
+    border-bottom: 2px solid #666666;
+    margin-bottom: 60px;
+    color: #666666;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.input-box:focus {
+    outline: none;
+}
+
+
+.input-box:empty:not(:focus)::before {
+    content: attr(data-placeholder);
+  }
+
+.insert-token-btn {
+    position: absolute;
+    top: -20px;
+    left: 6px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 3px 6px;
+    border-radius: 2px;
+    z-index: 1;
+    box-shadow: 0px 0px 10px -10px rgba(112,112,112,1);
+}
+
+.insertToken {
+    font-size: 10px;
+    background: rgb(231, 231, 231);
+    padding: 3px 6px;
+    color: rgb(109, 109, 109);
+}
+
+.main-container > p {
+    color: #666666;
+    font-size: 14px;
+}
+
+.responses {
+    display: flex;
+    align-items: center;
+    margin: 12px 0;
+}
+.responses > div {
+    border: 1px solid #666666;
+    width: 99%;
+    display: flex;
+    align-items: center;
+}
+.responses > div > span {
+    border-right: 1px solid #666666;
+}
+.responses > div > input {
+    margin-left: 4px;
+    padding: 4px;
+    outline: none;
+    border: none;
+    width: 100%;
+}
+
+.responses > div > input:focus {
+    border: 2px solid black;
+}
+
+.responses > .material-symbols-outlined {
+    cursor: pointer;
+    color: #1F7A54;
+}
+
+.add-response-btn {
+    margin-top: 39px;
+    margin-bottom: 56px;
+    padding: 5px 16px;
+    font-size: 18px;
+    border: 1px solid #7994B3;
+    background: #E2F8FE;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.checks {
+    display: flex;
+    margin: 14px 0 18px 0;
+}
+
+.check {
+    display: flex;
+    align-items: center;
+    margin-right: 28px;
+  }
+  
+  .check input[type="checkbox"] {
+    display: none;
+  }
+  
+  .check label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+  }
+  
+  .check .custom-checkbox {
+    width: 20px;
+    height: 20px;
+    border: 3px solid #1F7A54;
+    border-radius: 3px;
+    background-color: white;
+    position: relative;
+    margin-right: 10px;
+  }
+
+  .check input[type="checkbox"]:checked + label .custom-checkbox {
+    background-color: #1F7A54;
+    border-color: #1F7A54;
+  }
+  
+  .check input[type="checkbox"]:checked + label .custom-checkbox::after {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: -1px;
+    width: 5px;
+    height: 11px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(35deg);
+  }
+  
+  .check p {
+    margin: 0;
+    color: #333;
+  }
+  
+  .check .material-symbols-outlined {
+    font-size: 20px;
+    background: #000000;
+    border-radius: 50%;
+    color: #ffffff;
+  }
+
+.check > label > p {
+    font-size: 16px;
+    color: #222222;
+    margin-right: 8px;
+}
+
+
+.tools {
+    background: #ffffff;
+    margin-top: 8px;
+    padding: 19px 0 19px 24px;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #1F7A54;
+    text-transform: uppercase;
+}
+
+.prev {
+    display: flex;
+    justify-content: center;
+}
+.prev > button {
+    margin-top: 40px;
+    background: #3FD28B;
+    border-radius: 2px;
+    padding: 5px 11px;
+    font-size: 18px;
+    border: none;
+}

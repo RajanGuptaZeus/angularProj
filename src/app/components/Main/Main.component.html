@@ -1,0 +1,53 @@
+<main class="container">
+    <div class="main-container">
+        <input class="input-box" type="text" placeholder="Question (Stem)*">
+        <div (mouseenter)="show = true" (mouseleave)="show = false" style="position: relative;">
+            <p #input class="input-box" id="input-parent" contenteditable="true" [attr.data-placeholder]="placeholder"
+                (input)="handleQuestionInput($event)" [autofocus]="true">
+            </p>
+            <button class="insert-token-btn" *ngIf="show" (click)="insertToken()" contenteditable="false">
+                Insert Token
+            </button>
+        </div>
+        <p>Responses*</p>
+        <div class="responses-container">
+            <div *ngFor="let response of responses; let i = index; trackBy: trackByFn" class="responses">
+                <div>
+                    <span class="material-symbols-outlined">
+                        drag_indicator
+                    </span>
+                    <input type="text" [(ngModel)]="responses[i]">
+                </div>
+                <span class="material-symbols-outlined" (click)="deleteResponse(i)">delete</span>
+            </div>
+        </div>
+        <button class="add-response-btn" (click)="addResponse()">Add Response</button>
+
+
+        <p>Set Correct Answers*</p>
+        <div class="checks">
+            <div class="check">
+                <input type="checkbox" id="Shuffle" name="Shuffle">
+                <label for="Shuffle">
+                    <span class="custom-checkbox"></span>
+                    <p>Shuffle Responses</p>
+                    <span class="material-symbols-outlined">help</span>
+                </label>
+            </div>
+            <div class="check">
+                <input type="checkbox" id="duplicate" name="duplicate">
+                <label for="duplicate">
+                    <span class="custom-checkbox"></span>
+                    <p>Duplicate Responses</p>
+                    <span class="material-symbols-outlined">help</span>
+                </label>
+            </div>
+        </div>
+        <app-correct-ans [responses]="responses" [question]="question"></app-correct-ans>
+    </div>
+    <div class="tools">Select Tools</div>
+    <div class="tools">Add Feedback</div>
+    <div class="prev">
+        <button>Previous</button>
+    </div>
+</main>
